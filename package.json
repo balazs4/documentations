@@ -1,0 +1,17 @@
+{
+  "name": "documentations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "reveal-md README.md --watch --disable-auto-open",
+    "start": "nodemon --watch 'reveal*.json' --exec 'npm run dev'",
+    "build": "reveal-md README.md --static ./dist"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "reveal-md": "^0.4.0"
+  }
+}
